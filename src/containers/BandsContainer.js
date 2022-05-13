@@ -20,7 +20,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addBand: band => dispatch({ type: "ADD_BAND", payload: band }),
+    addBand: band => dispatch({ type: "ADD_BAND", name: band.name }),
     deleteBand: id => dispatch( {type: "DELETE_BAND", id})
   }
 }

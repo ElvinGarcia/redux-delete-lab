@@ -5,7 +5,7 @@ export default function manageBand(state = {
 }, action) {
   switch(action.type) {
     case "ADD_BAND":
-      const band = {name: action.payload.name, id: uuid()};
+      const band = {name: action.name, id: uuid()};
       return { ...state, bands: [ ...state.bands, band ] }
 
     case "DELETE_BAND":
